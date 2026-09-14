@@ -281,13 +281,13 @@ export default function Home() {
 
               <div className="absolute right-[5%] top-[10%] h-[400px] w-[400px] rounded-full border border-[#b89452]/70" />
 
-              <div className="relative z-10 h-full w-full max-w-[560px]">
+              <div className="relative z-10 h-[440px] w-[440px] overflow-hidden rounded-full">
                 <Image
                   src="/adesewa-portrait.png"
                   alt="Adesewa Ademola"
                   fill
                   priority
-                  className="object-contain object-bottom"
+                 className="object-cover object-top"
                 />
               </div>
 
