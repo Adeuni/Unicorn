@@ -276,7 +276,7 @@ export default function Home() {
             </div>
 
             {/* PORTRAIT */}
-            <div className="relative flex h-[560px] items-end justify-center lg:h-[680px] lg:justify-end">
+            <div className="relative flex h-[560px] items-center justify-center lg:h-[680px] lg:justify-end">
               <div className="absolute right-0 top-1/2 h-[440px] w-[440px] -translate-y-1/2 rounded-full bg-[#b99aef]/50 blur-[2px]" />
 
               <div className="absolute right-[5%] top-[10%] h-[400px] w-[400px] rounded-full border border-[#b89452]/70" />
