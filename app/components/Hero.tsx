@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, useMotionValue, useSpring } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
+import GhostTypewriterText from "./GhostTypewriterText";
 
 const marqueeItems = [
   "Web Design",
@@ -109,17 +110,14 @@ export default function Hero() {
               designed.
             </motion.h1>
 
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-9 max-w-xl text-base leading-7 text-white/60 md:text-lg"
+              className="mt-9 max-w-xl text-base leading-7 text-white/40 md:text-lg"
             >
-              I&apos;m Adesewa Ademola — a web and graphic designer shaping
-              considered digital experiences for ambitious brands. From
-              interface to identity to the words that tie it together, I
-              craft work that feels as refined as it performs.
-            </motion.p>
+              <GhostTypewriterText text="I'm Adesewa Ademola — a web and graphic designer shaping considered digital experiences for ambitious brands. From interface to identity to the words that tie it together, I craft work that feels as refined as it performs." />
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 16 }}

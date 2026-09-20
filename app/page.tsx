@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Services from "./components/Services";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 const navLinks = [
@@ -33,33 +34,6 @@ const socials = [
   { label: "f", href: "https://www.facebook.com/share/1EgvY1Hy7Y/" },
   { label: "Fv", href: "#" },
   { label: "Up", href: "https://www.upwork.com/freelancers/~01eea2fb12be60fd29" },
-];
-
-const services = [
-  {
-    number: "01",
-    icon: Layout,
-    title: "Web Design",
-    text: "Websites and landing pages designed around your brand, audience, and goals.",
-  },
-  {
-    number: "02",
-    icon: Palette,
-    title: "Graphic Design",
-    text: "Visuals that give your brand a clear, memorable, and polished presence.",
-  },
-  {
-    number: "03",
-    icon: Feather,
-    title: "Content Writing",
-    text: "Clear, engaging content that communicates your ideas and connects with people.",
-  },
-  {
-    number: "04",
-    icon: Megaphone,
-    title: "Copywriting",
-    text: "Strategic words designed to capture attention and move people to action.",
-  },
 ];
 
 const skillTags = [
@@ -165,29 +139,7 @@ export default function Home() {
       <WhatsAppButton />
       <Hero />
 
-      {/* SERVICES STRIP */}
-      <div className="relative z-20 mx-4 -mb-10 rounded-3xl border border-white/60 bg-[#f8f4ec]/95 shadow-xl backdrop-blur-md lg:mx-auto lg:max-w-7xl">
-        <div className="grid divide-y divide-[#19151f]/10 md:grid-cols-4 md:divide-x md:divide-y-0">
-          {services.map((service) => (
-            <div key={service.number} className="p-6 lg:p-7">
-              <div className="flex items-center justify-between">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#d9c7f3]/60 text-[#7654a8]">
-                  <service.icon size={16} />
-                </span>
-                <span className="text-xs text-[#7654a8]">
-                  {service.number}
-                </span>
-              </div>
-              <h3 className="mt-4 text-xl font-semibold tracking-tight">
-                {service.title}
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-[#6b6270]">
-                {service.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Services />
 
       {/* ABOUT */}
       <section id="about" className="px-6 pb-28 pt-36 lg:px-10">
