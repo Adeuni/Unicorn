@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  ArrowRight,
   Feather,
   Layout,
   Mail,
@@ -12,6 +11,7 @@ import {
   PenTool,
   ArrowUpRight,
 } from "lucide-react";
+import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
@@ -34,15 +34,6 @@ const socials = [
   { label: "f", href: "https://www.facebook.com/share/1EgvY1Hy7Y/" },
   { label: "Fv", href: "#" },
   { label: "Up", href: "https://www.upwork.com/freelancers/~01eea2fb12be60fd29" },
-];
-
-const skillTags = [
-  "Web Design",
-  "Brand Identity",
-  "UI/UX",
-  "Content Writing",
-  "Copywriting",
-  "SEO Basics",
 ];
 
 const process = [
@@ -141,53 +132,7 @@ export default function Home() {
 
       <Services />
 
-      {/* ABOUT */}
-      <section id="about" className="px-6 pb-28 pt-36 lg:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-14 lg:grid-cols-2 lg:items-start">
-            <div>
-              <Badge>About Me</Badge>
-              <h2 className="mt-5 max-w-lg text-4xl font-extrabold uppercase leading-[1.02] tracking-[-0.02em] md:text-5xl">
-                Your design &amp; content partner
-              </h2>
-              <p className="mt-6 max-w-md text-base leading-7 text-[#4c4355]">
-                I&apos;m not just a designer — I&apos;m a problem-solver and a
-                storyteller. From brand visuals to seamless web experiences
-                and the words that tie it all together, I bring your ideas to
-                life with care and clarity.
-              </p>
-
-              <a
-                href="#work"
-                className="mt-8 inline-flex items-center gap-2 rounded-full border border-[#19151f]/25 px-7 py-3.5 text-sm font-medium transition hover:border-[#7654a8] hover:text-[#7654a8]"
-              >
-                See how I work
-                <ArrowRight size={15} />
-              </a>
-            </div>
-
-            <div className="rounded-[2rem] bg-[#19151f] p-8 text-white lg:p-10">
-              <p className="text-sm uppercase tracking-[0.25em] text-[#c9a7ff]">
-                What I bring
-              </p>
-              <h3 className="mt-3 max-w-sm text-3xl font-semibold leading-tight">
-                One creative partner, four disciplines.
-              </h3>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                {skillTags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium text-white/80"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <About />
 
       {/* PROCESS */}
       <section id="process" className="bg-[#efe7f9] px-6 py-28 lg:px-10">
